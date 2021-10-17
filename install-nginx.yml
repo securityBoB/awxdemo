@@ -1,6 +1,6 @@
 #安装nginx服务
 ---
-- hosts: centos
+- hosts: all
   tasks:
     - name: install nginx
       yum: pkg=nginx state=present
