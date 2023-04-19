@@ -1,8 +1,5 @@
-#安装nginx服务
 ---
 - hosts: all
   tasks:
-    - name: install nginx
-      yum: pkg=nginx state=present
-    - name: start nginx
-      service: name=nginx state=started enabled=yes
+    - name: install busybox
+      yum: pkg=busybox state=present
